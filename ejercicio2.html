@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Ejercicio 2 - Offset y ordenacion</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background: #ececec;
+            font-family: Arial, sans-serif;
+        }
+
+        .fila {
+            margin-bottom: 10px;
+        }
+
+        .caja {
+            border: 2px solid #ffffff;
+            min-height: 58px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 500;
+            font-size: 1rem;
+            color: #1f2937;
+        }
+
+        .header {
+            background: #14f000;
+            color: #ffffff;
+            min-height: 30px;
+        }
+
+        .numeros {
+            background: #7ea5db;
+            min-height: 78px;
+        }
+
+        .letras {
+            background: #d8d8d8;
+        }
+
+        .naranja {
+            background: #ff9850;
+            min-height: 52px;
+        }
+
+        .estado {
+            background: #22dce6;
+            min-height: 44px;
+        }
+
+        .footer {
+            background: #14f000;
+            color: #ffffff;
+            min-height: 30px;
+        }
+
+        .titulo {
+            text-align: center;
+            margin-bottom: 8px;
+            font-size: 2rem;
+            font-weight: 400;
+        }
+
+        @media (max-width: 575.98px) {
+            .titulo {
+                font-size: 1.7rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="row fila">
+            <div class="col-12 caja header">Header</div>
+        </header>
+
+        <section class="row fila">
+            <div class="col-6 col-sm-3 col-md-2 offset-md-3 caja numeros">1</div>
+            <div class="col-6 col-sm-3 col-md-2 caja numeros">2</div>
+            <div class="w-100 d-none d-md-block"></div>
+            <div class="col-6 col-sm-3 col-md-2 caja numeros">3</div>
+            <div class="col-6 col-sm-3 col-md-2 offset-md-6 caja numeros">4</div>
+        </section>
+
+        <section class="row fila">
+            <div class="col-6 col-sm-3 col-md-3 order-md-4 caja letras">a</div>
+            <div class="col-6 col-sm-3 col-md-3 order-md-3 caja letras">b</div>
+            <div class="col-6 col-sm-3 col-md-3 order-md-2 caja letras">c</div>
+            <div class="col-6 col-sm-3 col-md-3 order-md-1 caja letras">d</div>
+        </section>
+
+        <section class="row fila d-none d-md-flex">
+            <div class="col-12 caja estado">Desktop</div>
+        </section>
+
+        <section class="row fila d-none d-sm-flex d-md-none">
+            <div class="col-12 caja estado">Tablet</div>
+        </section>
+
+        <section class="row fila d-flex d-sm-none">
+            <div class="col-12 caja estado">Mobile</div>
+        </section>
+
+        <section class="row fila">
+            <div class="col-12 d-none d-sm-block col-sm-6 col-md-2 offset-md-2 order-sm-2 order-md-1 caja naranja">:(</div>
+            <div class="col-12 col-sm-6 col-md-2 offset-md-5 order-sm-1 order-md-2 caja naranja">:D</div>
+        </section>
+
+        <footer class="row fila d-none d-sm-flex">
+            <div class="col-12 caja footer">Footer</div>
+        </footer>
+    </div>
+</body>
+
+</html>

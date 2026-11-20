@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Ejercicio 1 - Diseno responsive Bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <style>
+        .verde {
+            background-color: green;
+            border: 2px solid white;
+            height: 60px;
+        }
+
+        .rojo {
+            background-color: red;
+            border: 2px solid white;
+            height: 45vh;
+        }
+
+        .rosa {
+            background-color: pink;
+            border: 2px solid white;
+            height: 60px;
+        }
+
+        .naranja {
+            background-color: orange;
+            border: 2px solid white;
+            height: 90px;
+        }
+
+        .azul {
+            background-color: blue;
+            border: 2px solid white;
+            height: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header class="row">
+            <div class="col-12 verde"></div>
+        </header>
+
+        <main class="row">
+            <aside class="col-sm-3 col-md-2 d-none d-sm-block rojo"></aside>
+
+            <section class="col-sm-9 col-md-10 col-12">
+                <nav class="row">
+                    <div class="col-12 rosa"></div>
+                </nav>
+
+                <section class="row">
+                    <article class="col-12 col-md-6 naranja"></article>
+                    <article class="col-12 col-md-6 naranja"></article>
+                </section>
+
+                <section class="row">
+                    <article class="col-6 col-sm-4 col-md-2 azul"></article>
+                    <article class="col-6 col-sm-4 col-md-2 azul"></article>
+                    <article class="col-6 col-sm-4 col-md-4 azul"></article>
+                    <article class="col-6 col-sm-4 col-md-2 azul"></article>
+                    <article class="col-6 col-sm-4 col-md-2 azul"></article>
+                </section>
+
+                <section class="row">
+                    <article class="col-6 col-sm-4 col-md-2 azul"></article>
+                    <article class="col-6 col-sm-4 col-md-2 azul"></article>
+                    <article class="col-6 col-sm-4 col-md-4 azul"></article>
+                    <article class="col-6 col-sm-4 col-md-2 azul"></article>
+                    <article class="col-6 col-sm-4 col-md-2 azul"></article>
+                </section>
+            </section>
+        </main>
+
+        <footer class="row">
+            <div class="col-12 verde"></div>
+        </footer>
+    </div>
+</body>
+
+</html>
