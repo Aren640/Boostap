@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AudioApp - Escucha lo último</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body class="bg-dark text-light">
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href= >AudioApp</a>
+                <ul class="navbar-nav ms-auto flex-row gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" href= >Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href= >Buscar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href= >Radio</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container py-4 py-md-5">
+        <section class="banner bg-secondary text-light border p-4 p-md-5 mb-5" id="inicio">
+            <h1 class="h2">Escucha lo último</h1>
+            <p>Disfruta de más de 40 millones de canciones sin anuncios y en alta fidelidad.</p>
+            <a class="btn btn-success" >Reproducir</a>
+        </section>
+
+        <section id="albumes">
+            <h2 class="h4 mb-4">Álbumes recomendados</h2>
+            <div class="row g-4">
+                <article class="col-12 col-sm-6 col-lg-3">
+                    <div class="card album-card bg-secondary text-light h-100">
+                        <img src="img/blinding-lights.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title h5 mb-2">Blinding Lights</h3>
+                            <p class="card-text mb-0">The Weeknd</p>
+                            <button type="button" class="btn btn-success btn-sm w-100 mt-3">Escuchar</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-12 col-sm-6 col-lg-3">
+                    <div class="card album-card bg-secondary text-light h-100">
+                        <img src="img/shape-of-you.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title h5 mb-2">Shape of You</h3>
+                            <p class="card-text mb-0">Ed Sheeran</p>
+                            <button type="button" class="btn btn-success btn-sm w-100 mt-3">Escuchar</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-12 col-sm-6 col-lg-3">
+                    <div class="card album-card bg-secondary text-light h-100">
+                        <img src="img/starboy.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title h5 mb-2">Starboy</h3>
+                            <p class="card-text mb-0">The Weeknd ft. Daft Punk</p>
+                            <button type="button" class="btn btn-success btn-sm w-100 mt-3">Escuchar</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-12 col-sm-6 col-lg-3">
+                    <div class="card album-card bg-secondary text-light h-100">
+                        <img src="img/as-it-was.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title h5 mb-2">As It Was</h3>
+                            <p class="card-text mb-0">Harry Styles</p>
+                            <button type="button" class="btn btn-success btn-sm w-100 mt-3">Escuchar</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

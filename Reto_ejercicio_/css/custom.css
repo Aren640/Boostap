@@ -1,0 +1,70 @@
+body {
+    --bs-dark-rgb: 17, 24, 32;
+    --bs-light-rgb: 242, 245, 247;
+    --bs-secondary-rgb: 32, 45, 55;
+    font-family: "Inter", sans-serif;
+}
+
+.navbar {
+    --bs-dark-rgb: 24, 35, 45;
+    border-bottom: 1px solid #2b3a45;
+}
+
+.navbar-brand {
+    color: #5ce1a6;
+    font-weight: 700;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+    color: #8af0c4;
+}
+
+.nav-link {
+    color: #c3cdd3;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link.active {
+    color: #5ce1a6;
+}
+
+.banner {
+    --bs-border-color: #34444f;
+    border-radius: 0.75rem;
+}
+
+.banner p {
+    color: #c3cdd3;
+}
+
+.btn-success {
+    background-color: #39bd83;
+    border-color: #39bd83;
+    color: #102019;
+}
+
+.btn-success:hover,
+.btn-success:focus {
+    background-color: #5ce1a6;
+    border-color: #5ce1a6;
+    color: #102019;
+}
+
+.album-card {
+    --bs-border-color: #34444f;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.album-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.35);
+}
+
+.album-card .card-text {
+    color: #aebbc3;
+}
